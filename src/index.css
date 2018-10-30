@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Qwigley');
+
+body, html, p, h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html, .main{
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  background: url('./coffee_cup.jpg') bottom center no-repeat #ffffff;
+  background-position: center; 
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.main{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.header{
+  width: 70%;
+  height: 75px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header div{
+  width: 15%;
+}
+
+.header h1{
+  font-family: 'Qwigley', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2.8em;
+}
+
+
+.display-box{
+  width: 70%;
+  margin: 10px auto;
+  height: 574px;
+  border-radius: 5px;
+  background-color: rgba(53, 31, 15, 0.82);
+  padding: 10px;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+
+.display-box div{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card-wrapper{
+  width: 40%;
+  margin-top: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.card{
+  background-color: #ffffff;
+  color: #351F0F;
+  height: 150px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card h3, .card p{
+  width: 100%;
+  text-align: center;
+}
+
+.card h3{
+  font-size: 1em;
+}
+
+.card p{
+  font-size: 0.8em;
+}
+
+.location-title{
+  font-size: 2.4em;
+  text-decoration: underline;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.location-title h4{
+  font-family: 'Qwigley', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.toolbar{
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 10px auto;
+}
+
+.location-toggle{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+}
+
+.location-toggle p{
+  font-size: 1em;
+}
+
+.tgl {
+  display: none;
+}
+.tgl, .tgl:after, .tgl:before, .tgl *, .tgl *:after, .tgl *:before, .tgl + .tgl-btn {
+  box-sizing: border-box;
+}
+.tgl::-moz-selection, .tgl:after::-moz-selection, .tgl:before::-moz-selection, .tgl *::-moz-selection, .tgl *:after::-moz-selection, .tgl *:before::-moz-selection, .tgl + .tgl-btn::-moz-selection {
+  background: none;
+}
+.tgl::selection, .tgl:after::selection, .tgl:before::selection, .tgl *::selection, .tgl *:after::selection, .tgl *:before::selection, .tgl + .tgl-btn::selection {
+  background: none;
+}
+.tgl + .tgl-btn {
+  outline: 0;
+  display: block;
+  width: 4em;
+  height: 2em;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.tgl + .tgl-btn:after, .tgl + .tgl-btn:before {
+  position: relative;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+}
+.tgl + .tgl-btn:after {
+  left: 0;
+}
+.tgl + .tgl-btn:before {
+  display: none;
+}
+.tgl:checked + .tgl-btn:after {
+  left: 50%;
+}
+
+.tgl-light + .tgl-btn {
+  background: #f0f0f0;
+  border-radius: 2em;
+  padding: 2px;
+  transition: all .4s ease;
+}
+.tgl-light + .tgl-btn:after {
+  border-radius: 50%;
+  background: #351F0F;
+  transition: all .2s ease;
+}
+.tgl-light:checked + .tgl-btn:after {
+  border-radius: 50%;
+  background: #fff;
+  transition: all .2s ease;
+}
+.tgl-light:checked + .tgl-btn {
+  background: #351F0F;
+  border: 1px solid #fff;
+}
+
+
+.no-users{
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+@keyframes spin {
+  0% {transform: rotate(0deg)}
+  100% {transform: rotate(360deg)}
+}
+
+.loader-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-top: 7%;
+  justify-content: center;
+  align-items: center;
+  animation: spin 2s linear infinite;
+}
+
+.loader {
+  width: 80px;
+  height: 80px;
+  border: 12px solid #000;
+  border-top: 12px solid #ffffff;
+  border-radius: 50%;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .card-wrapper{
+    width: 100%;
+  }
+  .toolbar{
+    justify-content: center;
+    order: 3;
+  }
+}

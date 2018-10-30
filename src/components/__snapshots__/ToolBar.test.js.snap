@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match the ToolBar  component to snapshot 1`] = `
+<div
+  className="location-toggle"
+>
+  <p>
+    New York
+  </p>
+  <div
+    className="toggle-button"
+  >
+    <input
+      className="tgl tgl-light"
+      id="cb1"
+      type="checkbox"
+    />
+    <label
+      className="tgl-btn"
+      htmlFor="cb1"
+    />
+  </div>
+  <p>
+    Dublin
+  </p>
+</div>
+`;

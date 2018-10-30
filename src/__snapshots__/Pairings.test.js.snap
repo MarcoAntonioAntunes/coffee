@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches component to snapshot 1`] = `
+<div
+  className="main"
+>
+  <div
+    className="header"
+  >
+    <h1>
+      Coffee Week
+    </h1>
+  </div>
+  <div
+    className="toolbar"
+  >
+    <div
+      className="search-input"
+    />
+    <div
+      className="location-toggle"
+    >
+      <p>
+        New York
+      </p>
+      <div
+        className="toggle-button"
+      >
+        <input
+          className="tgl tgl-light"
+          id="cb1"
+          onClick={[Function]}
+          type="checkbox"
+        />
+        <label
+          className="tgl-btn"
+          htmlFor="cb1"
+        />
+      </div>
+      <p>
+        Dublin
+      </p>
+    </div>
+  </div>
+  <div
+    className="display-box"
+  >
+    <div
+      className="newyork"
+    >
+      <div
+        className="location-title"
+      >
+        <h4>
+          New York Office
+        </h4>
+      </div>
+      <div
+        className="loader-wrapper"
+      >
+        <div
+          className="loader"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

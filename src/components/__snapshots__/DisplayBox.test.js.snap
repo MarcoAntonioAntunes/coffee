@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match the DisplayBox  component to snapshot 1`] = `
+<div
+  className="display-box"
+>
+  <div
+    className="dublin"
+  >
+    <div
+      className="location-title"
+    >
+      <h4>
+        Dublin Office
+      </h4>
+    </div>
+    <div>
+      <div
+        className="no-users"
+      >
+        <h3>
+          No pairings available
+        </h3>
+      </div>
+    </div>
+  </div>
+</div>
+`;

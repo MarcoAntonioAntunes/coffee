@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match the Card  component to snapshot 1`] = `
+<div
+  className="card"
+>
+  <h3>
+     
+  </h3>
+  <p
+    className="link"
+  >
+    should give a cup of coffee to
+  </p>
+  <h3>
+     
+  </h3>
+</div>
+`;
